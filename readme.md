@@ -11,11 +11,10 @@ In this course, Envato Tuts+ instructor Jason Lewis will show you how to process
 
 ## Source Files Description
 
-This is a very minimal application with much of the code existing in the `app/Http/routes.php` file. This code base demonstrates how you can use
-Cashier component to bill users of your web application. The other files that you might like to explore are the models, `app/User.php`, `app/Cart.php`, and `app/Product.php`. These
-contain relationships that link the data to each other.
 
-To get this code base up and running on your local machine you'll first need to clone this repository. Then, you'll need to run the following commands:
+This is a very minimal application with much of the code existing in the `app/Http/routes.php` file. This code base demonstrates how you can use the Cashier component to bill users of your web application. The other files that you might like to explore are the models, `app/User.php`, `app/Cart.php`, and `app/Product.php`. These contain relationships that link the data to each other.
+
+To get this code base up and running on your local machine machine, you'll first need to clone this repository. Then, you'll need to run the following commands: command,:
 
 ```
 composer install
@@ -23,17 +22,16 @@ composer install
 
 Once the dependencies are installed you'll need to configure your database settings by renaming `.env.example` to `.env`. You'll then need to provide a `STRIPE_SECRET` key in your `.env` file.
 
-This secret can key be obtained from your Stripe account dashboard, make sure you use your testing key when developing locally.
+This secret can key can be obtained from your Stripe account dashboard, dashboard; make sure you use your testing key when developing locally.
 
 You'll then be able to run the following commands:
 
 ```
 php artisan migrate
-php aritsan db:seed
+php artisan db:seed
 ```
 
 You can then serve the application using `php artisan serve` or by utilizing Homestead.
-
 ------
 
 These are source files for the Tuts+ course: [Process Payments With Stripe and Laravel Cashier][published url]
